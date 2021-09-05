@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  color: white;
+  background-color: rgb(239, 244, 255);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../../images/hero.svg');
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  transform: scaleX(-1);
+}
+
+.content {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 120px 30px;
+  transform: scaleX(-1);
+}
+
+.title {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-size: 22px;
+}

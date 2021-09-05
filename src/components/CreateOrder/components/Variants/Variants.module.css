@@ -1,0 +1,14 @@
+.row {
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 23rem;
+  height: 250px;
+  cursor: pointer;
+}
+
+ol,
+ul {
+  padding-left: 1rem !important;
+}

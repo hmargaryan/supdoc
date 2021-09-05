@@ -1,0 +1,13 @@
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.tableRow {
+  cursor: pointer;
+}

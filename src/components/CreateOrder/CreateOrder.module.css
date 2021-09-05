@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.deliveryVariants {
+  margin-bottom: 50px;
+}
+
+.deliveryVariant {
+  height: 180px;
+  cursor: pointer;
+}
+
+.sectionTitle {
+  margin-bottom: 20px;
+}
+
+.deliveryTransports {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.deliveryTransport {
+  cursor: pointer;
+}
+
+.deliveryTransport:not(:last-child) {
+  margin-right: 20px;
+}
+
+.border-primary {
+  border-width: 2px;
+}
+
+.toast {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 18px !important;
+  z-index: 100;
+}
+
+.order {
+  max-width: 780px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgb(49 50 56 / 10%);
+}
+
+.orderTitle {
+  margin-bottom: 20px;
+}
+
+.orderButton {
+  margin-bottom: 20px;
+}

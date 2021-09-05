@@ -1,0 +1,22 @@
+.addressesContainer {
+  margin-bottom: 50px;
+}
+
+.card {
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.button {
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteButton {
+  cursor: pointer;
+}
