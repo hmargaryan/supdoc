@@ -8,6 +8,7 @@ import Login from './components/Login'
 import CreateOrder from './components/CreateOrder/CreateOrder'
 import Orders from './components/Orders/Orders'
 import Order from './components/Order/Order'
+import DeliveryOrders from './components/DeliveryOrders/DeliveryOrders'
 
 const App = () => {
   const { currentUser } = useAuth()
@@ -31,6 +32,9 @@ const App = () => {
         </Route>
         <Route path='/order/:id'>
           {currentUser?.email ? <Order /> : <Redirect to='/' />}
+        </Route>
+        <Route path='/delivery-orders'>
+          {currentUser?.email === 'deliveryman@gmail.com' ? <DeliveryOrders /> : <Redirect to='/' />}
         </Route>
       </Switch>
     </Router>
