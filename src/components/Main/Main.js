@@ -9,10 +9,14 @@ const Main = () => {
   const history = useHistory()
 
   const handleButtonClick = () => {
-    if (currentUser?.email) {
-      history.push('/create-order')
+    if (currentUser?.email === 'deliveryman@gmail.com') {
+      history.push('/delivery-profile')
     } else {
-      history.push('/login?redirect=create-order')
+      if (currentUser?.email) {
+        history.push('/create-order')
+      } else {
+        history.push('/login?redirect=create-order')
+      }
     }
   }
 
@@ -21,7 +25,7 @@ const Main = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>СапДок – доставка из рук в руки</h1>
         <p className={styles.subtitle}>Организуем курьерскую доставку документов из точки А в точку Б</p>
-        <Button variant='info' onClick={handleButtonClick}>Заказать доставку</Button>
+        <Button variant='info' onClick={handleButtonClick}>{currentUser?.email === 'deliveryman@gmail.com' ? 'Посмотреть поступившие заказы' : 'Заказать доставку'}</Button>
       </div>
     </div>
   )

@@ -68,6 +68,8 @@ export const orders = {
   '0605092102': {
     id: '0605092102',
     date: '5 Сентября 2021',
+    time: '12:00',
+    name: { name: 'Евгений Булкин', email: 'hamlet.java@gmail.com', phone: '+7 (800) 555-35-35)' },
     addresses: [
       { address: 'Лесная, 7' },
       { address: 'въезд Гоголя, 74', name: 'Зайцева Эмилия', phone: '+7 (495) 480-13-08' }
@@ -89,6 +91,7 @@ export const orders = {
   '0605092101': {
     id: '0605092101',
     date: '5 Сентября 2021',
+    name: { name: 'Георгий Фазанов', email: 'fazan@gmail.com', phone: '+7 (845) 123-43-24)' },
     addresses: [
       { address: 'ул. Будапештсткая, 63' },
       { address: 'наб. Ломоносова, 78', name: 'Софронова Полина', phone: '+7 (495) 937-84-89' }
@@ -99,7 +102,7 @@ export const orders = {
       text: 'На выполнении'
     },
     price: {
-      price: 600,
+      price: 800,
       type: 'картой'
     },
     history: [

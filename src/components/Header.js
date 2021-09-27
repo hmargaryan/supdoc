@@ -1,7 +1,7 @@
 import React from 'react'
 import { userCheck } from '../helper';
 import { useAuth } from '../context/AuthContext'
-import { Navbar, Nav, Container, Button } from 'react-bootstrap'
+import { Navbar, Nav, Container, Button, Badge } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 
 const Header = () => {
@@ -23,8 +23,14 @@ const Header = () => {
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto'>
-            <Nav.Link href={currentUser?.email ? '/create-order' : '/login?redirect=create-order'}>Заказать доставку</Nav.Link>
-            {currentUser?.email && <Nav.Link href='/orders'>Мои заказы</Nav.Link>}
+            {currentUser?.email !== 'deliveryman@gmail.com' ? (
+              <>
+                <Nav.Link href={currentUser?.email ? '/create-order' : '/login?redirect=create-order'}>Заказать доставку</Nav.Link>
+                {currentUser?.email && <Nav.Link href='/orders'>Мои заказы</Nav.Link>}
+              </>
+            ) : (
+              <Nav.Link href='/delivery-orders'>Заказы <Badge className='bg-danger'>2</Badge></Nav.Link>
+            )}
           </Nav>
           <Button variant={userCheck(!!currentUser?.email, 'buttonBg')} onClick={handleButtonClick}>
             {userCheck(!!currentUser?.email, 'buttonText')}
