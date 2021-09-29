@@ -3,23 +3,19 @@ import { Card } from 'react-bootstrap'
 import { deliveryWeights } from '../../../../helper'
 import styles from './Weights.module.css'
 
-const Weights = ({ weight, transport, onCardClick }) => {
+const Weights = ({ weight, onCardClick }) => {
   return (
     <>
-      <h4 className={styles.title}>Вес посылки</h4>
+      <h4 className={styles.title}>Товары</h4>
       <div className={styles.container}>
-        {deliveryWeights.foot.map((value) => {
-          return (
-            <Card
-              key={value}
-              border={weight === value ? 'primary' : 'secondary'}
-              body
-              className={styles.card}
-              onClick={() => onCardClick(value)}>
-              до {value} кг
-            </Card>
-          )
-        })}
+        <ul>
+          <li>
+            <a href='haha'>Трусики Moony для мальчиков L (9-14 кг) 44 шт</a>
+          </li>
+          <li>
+            <a href='haha'>Зарядное устройство InfinityLab InstantCharger 65W</a>
+          </li>
+        </ul>
       </div>
     </>
   )

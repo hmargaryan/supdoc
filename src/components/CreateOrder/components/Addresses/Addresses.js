@@ -19,6 +19,13 @@ const Addresses = ({ addresses, variant, onAddAddressButtonClick, onDeleteAddres
                 <Form.Label>Адрес</Form.Label>
                 <Form.Control placeholder='ул. Пушкина, дом 1' value={address} onChange={(e) => onAddressInputChange(e, id)} />
               </Form.Group>
+              <Form.Group className='mb-3'>
+                <Form.Label>Товар</Form.Label>
+                <Form.Control as='select' className='form-select'>
+                  <option>Трусики Moony для мальчиков L (9-14 кг) 44 шт</option>
+                  <option value='1'>Зарядное устройство InfinityLab InstantCharger 65W</option>
+                </Form.Control>
+              </Form.Group>
               <Row className='mb-3'>
                 <Form.Group as={Col}>
                   <Form.Label>Контактное лицо</Form.Label>

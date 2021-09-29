@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <Navbar bg='primary' variant='dark' collapseOnSelect expand='lg' sticky='top'>
       <Container>
-        <Navbar.Brand href='/'>СапДок</Navbar.Brand>
+        <Navbar.Brand href='/'>СапДок <Badge className='bg-info'>OZON</Badge></Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto'>
